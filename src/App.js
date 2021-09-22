@@ -1,17 +1,18 @@
-import Details from "./components/Details";
-import Education from "./components/Education";
-import Experience from "./components/Experience";
-import References from "./components/References";
+import CreateSide from './components/creation-components/CreateSide'
+import PrintSide from './components/print-components/PrintSide'
 
-function App() {
-  return (
-    <div className="App">
-      <Details />
-      <Experience />
-      <Education />
-      <References />
-    </div>
-  );
+import React, { Component } from 'react'
+
+import './styles/App.css'
+
+export default class App extends Component {
+
+	render() {
+		return (
+			<div className="App">
+				<CreateSide />
+				<PrintSide />
+			</div>
+		)
+	}
 }
-
-export default App;

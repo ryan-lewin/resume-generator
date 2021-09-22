@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ExperienceSection from './ExperienceSection'
+import ExperienceSection from './print-section-components/ExperienceSection'
 
 export default class Experience extends Component {
     render() {

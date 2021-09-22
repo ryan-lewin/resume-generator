@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ReferenceSection from './ReferenceSection'
+import ReferenceSection from './print-section-components/ReferenceSection'
 
 export default class References extends Component {
     render() {
