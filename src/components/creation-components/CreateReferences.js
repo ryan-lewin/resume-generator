@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import uniqid from 'uniqid'
 import ReferenceSection from './creation-section-components/CreateReferenceSection'
 
 export default class References extends Component {
@@ -13,6 +12,7 @@ export default class References extends Component {
     }
 
     addReference = (reference)  => {
+        console.log(reference)
         this.setState({references: this.state.references.concat(reference)})
     }
 
@@ -23,7 +23,7 @@ export default class References extends Component {
                 <ReferenceSection addReference={this.addReference}/>
                 <ul>
                     {this.state.references.map(reference => {
-                        return <li key={reference.id}>
+                        return <li key={reference.id}>  
                             {`${reference.name}`},  
                             {`${reference.title}`},  
                             {`${reference.company}`},  

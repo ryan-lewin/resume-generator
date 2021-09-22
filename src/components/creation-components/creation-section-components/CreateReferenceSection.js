@@ -7,14 +7,12 @@ export default class ReferenceSection extends Component {
 
 
         this.state = {
-            reference: {
-                id: uniqid(),
-                name: '',
-                title: '',
-                company: '',
-                number: '',
-                email: '',
-            },   
+            id: uniqid(),
+            name: '',
+            title: '',
+            company: '',
+            number: '',
+            email: '',
         }
 
         this.handleChange = this.handleChange.bind(this);
@@ -25,7 +23,8 @@ export default class ReferenceSection extends Component {
         // Spread multiple inputs across the reference state object
         const value = event.target.value;
         this.setState({
-            ...this.state, [event.target.name]: value
+            ...this.state, [event.target.name]: value,
+            id: uniqid(),
         })
     }
 
@@ -35,7 +34,6 @@ export default class ReferenceSection extends Component {
     }
 
     render() {
-        // const {addReference} = this.props
         return (
             <form className='inputContainer' onSubmit={this.sendReference}>
                 <label htmlFor='name'>
