@@ -49,7 +49,7 @@ export default class ReferenceSection extends Component {
                 </label>
 
                 <label htmlFor='title'>
-                    Email
+                    Title
                     <input 
                         name='title'
                         value={this.state.title || ''}

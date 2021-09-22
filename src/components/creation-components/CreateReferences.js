@@ -10,18 +10,10 @@ export default class References extends Component {
             references: []
         }
         this.addReference = this.addReference.bind(this);
-
-        this.testButton = this.testButton.bind(this);
     }
 
     addReference = (reference)  => {
         this.setState({references: this.state.references.concat(reference)})
-    }
-
-    testButton = (event) => {
-        // Used to test the state being updated
-        event.preventDefault();
-        console.log(this.state.references)
     }
 
     render() {
@@ -29,7 +21,17 @@ export default class References extends Component {
             <div>
                 <h3>References</h3>
                 <ReferenceSection addReference={this.addReference}/>
-                <button onClick={this.testButton}>test</button>
+                <ul>
+                    {this.state.references.map(reference => {
+                        return <li key={reference.id}>
+                            {`${reference.name}`},  
+                            {`${reference.title}`},  
+                            {`${reference.company}`},  
+                            {`${reference.number}`}, 
+                            {`${reference.email}`}
+                        </li>
+                    })}
+                </ul>
             </div>
         )
     }
