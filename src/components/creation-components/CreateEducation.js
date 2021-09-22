@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import uniqid from 'uniqid';
+// import uniqid from 'uniqid';
 
 import EducationSection from './creation-section-components/CreateEducationSection'
 
