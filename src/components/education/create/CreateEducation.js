@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 // import uniqid from 'uniqid';
 
-import EducationSection from './creation-section-components/CreateEducationSection'
+import EducationSection from './CreateEducationSection'
 
 export default class Education extends Component {
 

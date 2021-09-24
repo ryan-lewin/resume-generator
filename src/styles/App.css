@@ -14,3 +14,9 @@
     display: flex;
     flex-direction: column;
 }
+
+.created-details-container {
+    margin: .5rem 0 .5rem 0;
+    padding: 1rem;
+    border: .1rem solid grey;
+}

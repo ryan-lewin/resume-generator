@@ -1,5 +1,5 @@
-import CreateSide from './components/creation-components/CreateSide'
-import PrintSide from './components/print-components/PrintSide'
+import CreateSide from './components/common/CreateSide'
+// import PrintSide from './components/print-components/PrintSide'
 
 import React, { Component } from 'react'
 
@@ -11,7 +11,7 @@ export default class App extends Component {
 		return (
 			<div className="App">
 				<CreateSide />
-				<PrintSide />
+				{/* <PrintSide /> */}
 			</div>
 		)
 	}
