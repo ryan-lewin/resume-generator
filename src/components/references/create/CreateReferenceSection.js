@@ -17,6 +17,7 @@ export default class ReferenceSection extends Component {
 
         this.handleChange = this.handleChange.bind(this);
         this.sendReference = this.sendReference.bind(this);
+        this.resetForm = this.resetForm.bind(this);
     }
 
     handleChange = (event) => {
@@ -26,11 +27,24 @@ export default class ReferenceSection extends Component {
             ...this.state, [event.target.name]: value,
             id: uniqid(),
         })
+        // this.resetForm()
     }
 
     sendReference = event => {
         event.preventDefault();
         this.props.addReference(this.state);
+        this.resetForm()
+    }
+
+    resetForm = () => {
+        this.setState({
+                id: uniqid(),
+                name: '',
+                title: '',
+                company: '',
+                number: '',
+                email: '',
+            })
     }
 
     render() {
