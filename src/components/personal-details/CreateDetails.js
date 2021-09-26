@@ -33,26 +33,33 @@ export default class Details extends Component {
         return (
             <div className='inputContainer'>
                 <h3>Personal Information</h3>
-                <label htmlFor='name'>Your name</label>
+                <label htmlFor='name'>Your name
                 <input name='name' value={this.state.name || ''} onChange={this.handleChange}></input>
+                </label>
 
-                <label htmlFor='Address'>Your address</label>
+                <label htmlFor='Address'>Your address
                 <input name='address' value={this.state.address || ''} onChange={this.handleChange}></input>
+                </label>
 
-                <label htmlFor='number'>Your number</label>
+                <label htmlFor='number'>Your number
                 <input type='tel' name='number' value={this.state.number || ''} onChange={this.handleChange}></input>
+                </label>
 
-                <label htmlFor='email'>Your email</label>
+                <label htmlFor='email'>Your email
                 <input type='email' name='email' value={this.state.email || ''} onChange={this.handleChange}></input>
+                </label>
 
-                <label htmlFor='linkedin'>Your LinkedIn</label>
+                <label htmlFor='linkedin'>Your LinkedIn
                 <input name='linkedin' value={this.state.linkedin || ''} onChange={this.handleChange}></input>
+                </label>
 
-                <label htmlFor='github'>Your Github</label>
+                <label htmlFor='github'>Your Github
                 <input name='github' value={this.state.github || ''} onChange={this.handleChange}></input>
+                </label>
 
-                <label htmlFor='github'>Your Website</label>
+                <label htmlFor='github'>Your Website
                 <input name='website' value={this.state.website || ''} onChange={this.handleChange}></input>
+                </label>
 
                 <button type='submit'>Save</button>
             </div>
