@@ -1,17 +1,6 @@
 import React, { Component } from 'react'
 
 export default class CreatedDetails extends Component {
-    constructor(props) {
-        super(props);
-
-        // this.handleDelete = this.handleDelete.bind(this);
-    }
-
-    // handleDelete = event => {
-    //     console.log(event.target.id)
-    //     // item.preventDefault();
-    //     this.props.removeItem(item);
-    // }
     
     render() {
         const {title, items, removeItem} = this.props

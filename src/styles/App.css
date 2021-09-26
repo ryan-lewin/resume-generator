@@ -11,14 +11,8 @@
 }
 
 .container {
-    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-}
-
-.details-container {
-    width: 100%;
-    min-width: 20rem;
 }
 
 .section-container {
@@ -29,6 +23,7 @@
     display: flex;
     flex-direction: column;
     margin: 1rem 2rem;
+    min-width: 25rem;
 }
 
 .created-details-container {
@@ -59,4 +54,12 @@ button {
     border-radius: 5px;
     width: 10rem;
     margin-top: .5rem;
+}
+
+.A4 {
+    margin-top: 2rem;
+    border: 1px solid grey;
+    width: 21cm;
+    height: 29.7cm;
+    text-align: center;
 }

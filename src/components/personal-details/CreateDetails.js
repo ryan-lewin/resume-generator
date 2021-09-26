@@ -15,19 +15,17 @@ export default class Details extends Component {
         }
 
         this.handleChange = this.handleChange.bind(this);
-        this.submitDetails = this.submitDetails.bind(this);
     }
+
+    
 
     handleChange = event => {
         const value = event.target.value;
         this.setState({
             ...this.state, [event.target.name]: value
         })
+        this.props.setDetails('personal', this.state)
     }
-
-    submitDetails = event => {
-        // Will pass up state to create side
-    } 
 
     render() {
         return (
@@ -61,7 +59,7 @@ export default class Details extends Component {
                 <input name='website' value={this.state.website || ''} onChange={this.handleChange}></input>
                 </label>
 
-                <button type='submit'>Save</button>
+                <button onClick={this.handleChange}>Save</button>
             </div>
         )
     }

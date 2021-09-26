@@ -10,8 +10,8 @@ export default class PrintSide extends Component {
 
     render() {
         return (
-            <div className='container'>
-                <Details />
+            <div className='pretty-print' className='A4'>
+                <Details details={this.props.details.personal}/>
 				<Experience />
 				<Education />
 				<References /> 
