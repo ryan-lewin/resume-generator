@@ -31,7 +31,7 @@ export default class Details extends Component {
 
     render() {
         return (
-            <div className='inputContainer'>
+            <div className='inputContainer details-container'>
                 <h3>Personal Information</h3>
                 <label htmlFor='name'>Your name
                 <input name='name' value={this.state.name || ''} onChange={this.handleChange}></input>

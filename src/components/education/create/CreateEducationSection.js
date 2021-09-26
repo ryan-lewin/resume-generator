@@ -45,7 +45,7 @@ export default class EducationSection extends Component {
     render() {
         return (
             <form className='inputContainer' onSubmit={this.sendEducation}>
-                <label htmlFor='finished'>Date finished
+                <label htmlFor='finished'>Finished
                 <input type='date' name='finished' value={this.state.finished || ''} onChange={this.handleChange}></input>
                 </label>
 

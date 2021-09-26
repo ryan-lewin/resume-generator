@@ -19,7 +19,7 @@ export default class Experience extends Component {
 
     render() {
         return (
-            <div>
+            <div className='section-container'>
                 <h3>Experience</h3>
                 <ExperienceSection addExperience={this.addExperience}/>
                 <CreatedExperience title='Added Experience' items={this.state.experienceList} />

@@ -15,15 +15,12 @@ export default class Education extends Component {
     }
 
     addEducation = (education) => {
-        // console.log(this.state.educationList)
         this.setState({educationList: this.state.educationList.concat(education)})
-        // this.setState({educationsList: this.state.educationList.concat(education)})
-        // console.log(this.state.educationList)
     }
 
     render() {
         return (
-            <div>
+            <div className='section-container'>
                 <h3>Education</h3>
                 <EducationSection addEducation={this.addEducation} />
                 <CreatedEducation title='Added Education' items={this.state.educationList}/>
@@ -31,11 +28,3 @@ export default class Education extends Component {
         )
     }
 }
-
-
-// this.setState({references: this.state.references.concat(reference)})
-
-
-// this.state = {
-//     references: []
-// }

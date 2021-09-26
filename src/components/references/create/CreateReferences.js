@@ -18,7 +18,7 @@ export default class References extends Component {
 
     render() {
         return (
-            <div>
+            <div className='section-container'>
                 <h3>References</h3>
                 <ReferenceSection addReference={this.addReference}/>
                 <CreatedReferences title='References' items={this.state.references} />

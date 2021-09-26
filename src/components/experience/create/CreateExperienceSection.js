@@ -45,15 +45,15 @@ export default class ExperienceSection extends Component {
     render() {
         return (
             <form className='inputContainer' onSubmit={this.sendExperience}>
-                <label htmlFor='star'>Start date
+                <label htmlFor='star'>Start
                     <input type='date' name='start' value={this.state.start || ''} onChange={this.handleChange}></input>
                 </label>
 
-                <label htmlFor='end'>End date
+                <label htmlFor='end'>End
                     <input type='date' name='end' value={this.state.end || ''} onChange={this.handleChange}></input>
                 </label>
 
-                <label htmlFor='title'>Job title
+                <label htmlFor='title'>Title
                     <input name='title' value={this.state.title || ''} onChange={this.handleChange}></input>
                 </label>
 

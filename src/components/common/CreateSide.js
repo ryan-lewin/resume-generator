@@ -9,10 +9,10 @@ export default class CreateSide extends Component {
     render() {
         return (
             <div className='container'>
-                <CreateDetails />
-				<CreateExperience />
-				<CreateEducation />
-				<CreateReferences /> 
+                <CreateDetails className='section-container' />
+				<CreateExperience className='section-container' />
+				<CreateEducation className='section-container' />
+				<CreateReferences className='section-container' /> 
             </div>
         )
     }
