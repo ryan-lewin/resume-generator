@@ -11,10 +11,17 @@ export default class Experience extends Component {
         }
         
         this.addExperience = this.addExperience.bind(this);
+        this.removeExperience = this.removeExperience.bind(this);
     }
 
     addExperience = experience => {
         this.setState({experienceList: this.state.experienceList.concat(experience)});
+    }
+
+    removeExperience = (event) => {
+        this.setState({experienceList: this.state.experienceList.filter(experience => {
+            return experience.id !== event.target.id;
+        })})
     }
 
     render() {
@@ -22,7 +29,7 @@ export default class Experience extends Component {
             <div className='section-container'>
                 <h3>Experience</h3>
                 <ExperienceSection addExperience={this.addExperience}/>
-                <CreatedExperience title='Added Experience' items={this.state.experienceList} />
+                <CreatedExperience title='Added Experience' items={this.state.experienceList} removeItem={this.removeExperience}/>
             </div>
         )
     }
