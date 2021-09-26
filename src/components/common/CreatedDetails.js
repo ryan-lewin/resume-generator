@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class CreatedReferences extends Component {
+export default class CreatedDetails extends Component {
     render() {
         const {title, items} = this.props
 
