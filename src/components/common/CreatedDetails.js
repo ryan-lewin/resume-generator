@@ -1,8 +1,20 @@
 import React, { Component } from 'react'
 
 export default class CreatedDetails extends Component {
+    constructor(props) {
+        super(props);
+
+        // this.handleDelete = this.handleDelete.bind(this);
+    }
+
+    // handleDelete = event => {
+    //     console.log(event.target.id)
+    //     // item.preventDefault();
+    //     this.props.removeItem(item);
+    // }
+    
     render() {
-        const {title, items} = this.props
+        const {title, items, removeItem} = this.props
 
         return (
             <div> 
@@ -10,13 +22,11 @@ export default class CreatedDetails extends Component {
                 {items.map(item => {
                     return (
                         <div key={item.id} className='created-details-container'>
-                            <div>
-                                {Object.entries(item).map(([key, value]) => <p key={key}>{key.toUpperCase()}: {value}</p>)} 
-                            </div>
-                            <div>
-                                <button>Edit</button>
-                                <button>Delete</button>
-                            </div>
+                                {Object.entries(item).map(([key, value]) => 
+                                <div key={key}>
+                                    <p>{key.toUpperCase()}: {value}</p>
+                                </div>)} 
+                            <button id={item.id} onClick={removeItem}>Remove</button>
                         </div>
                     )
                 })}
