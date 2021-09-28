@@ -11,10 +11,14 @@ export default class PrintSide extends Component {
     render() {
         return (
             <div className='pretty-print' className='A4'>
-                <Details details={this.props.details.personal}/>
-				<Experience details={this.props.details.experience} />
-				<Education details={this.props.details.education} />
-				<References details={this.props.details.references} /> 
+                <section>
+                    <h1>{this.props.details.personal.name || 'Your name'}</h1>
+                    <p>{this.props.details.personal.address || 'Your address'} | {this.props.details.personal.number || 'Your number'} | {this.props.details.personal.email || 'Your email'}</p>
+                    <p>{this.props.details.personal.linkedin || 'Your LinkedIn'} | {this.props.details.personal.github || 'Your GitHub'} | {this.props.details.personal.website || 'Your Website'}</p>
+                </section>
+                <section>
+                    
+                </section>
             </div>
         )
     }

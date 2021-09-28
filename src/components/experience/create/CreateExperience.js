@@ -16,6 +16,7 @@ export default class Experience extends Component {
 
     addExperience = experience => {
         this.setState({experienceList: this.state.experienceList.concat(experience)});
+        this.props.setDetails('experience', this.state)
     }
 
     removeExperience = (event) => {
