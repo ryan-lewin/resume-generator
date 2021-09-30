@@ -19,12 +19,14 @@ export default class App extends Component {
 	}
 
 	collectDetails = (section, details) => {
+		console.log(section)
+		console.log(details)
 		switch(section) {
             case 'personal':
                 this.setState({personal: details})
                 break;
             case ' experience':
-                this.setState({experience: details})
+                this.setState({experience: this.state.experience.concat(details)})
                 break;
             case 'education':
 				this.setState({education: details})
@@ -47,3 +49,6 @@ export default class App extends Component {
 		)
 	}
 }
+
+
+// this.setState({experienceList: this.state.experienceList.concat(experience)});

@@ -14,7 +14,6 @@ export default class CreateSide extends Component {
 	}
 
 	setDetails = (section, details) => {
-
         this.props.collectDetails(section, details)
 	}
 

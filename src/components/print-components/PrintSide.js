@@ -16,8 +16,15 @@ export default class PrintSide extends Component {
                     <p>{this.props.details.personal.address || 'Your address'} | {this.props.details.personal.number || 'Your number'} | {this.props.details.personal.email || 'Your email'}</p>
                     <p>{this.props.details.personal.linkedin || 'Your LinkedIn'} | {this.props.details.personal.github || 'Your GitHub'} | {this.props.details.personal.website || 'Your Website'}</p>
                 </section>
+                <br/>
                 <section>
-                    
+                    <p>date - date</p>
+                    <p>Title, Company</p>
+                    <ul>
+                        <li>job task</li>
+                        <li>job task</li>
+                        <li>job task</li>
+                    </ul>
                 </section>
             </div>
         )
