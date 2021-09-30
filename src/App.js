@@ -22,11 +22,11 @@ export default class App extends Component {
 		console.log(section)
 		console.log(details)
 		switch(section) {
-            case 'personal':
-                this.setState({personal: details})
-                break;
-            case ' experience':
-                this.setState({experience: this.state.experience.concat(details)})
+            // case 'personal':
+            //     this.setState({personal: details})
+            //     break;
+            case 'experience':
+                this.setState({experience: details})
                 break;
             case 'education':
 				this.setState({education: details})
